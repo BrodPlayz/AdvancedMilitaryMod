@@ -1,0 +1,59 @@
+{
+  "mod_elements": [
+    {
+      "name": "MilitaryMod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "military_mod"
+    },
+    {
+      "name": "Tech9",
+      "type": "rangeditem",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tech_9"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.military_mod_testing.bullet": "Bullet",
+      "itemGroup.tabmilitary_mod": "Military Mod",
+      "item.military_mod_testing.tech_9": "Pistol"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "military_mod_testing",
+    "modName": "Military Mod ",
+    "version": "1.0.0",
+    "author": "Brody, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.militarymodtesting",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

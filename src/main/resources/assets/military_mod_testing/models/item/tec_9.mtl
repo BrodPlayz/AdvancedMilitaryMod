@@ -1,0 +1,7 @@
+newmtl Mat_0
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+map_Kd military_mod_testing:blocks/tec9_base_color
+Ns 100.0
+d 1.0

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Mat_0": "tec9_base_color"
+      },
+      "name": "default"
+    }
+  }
+}
