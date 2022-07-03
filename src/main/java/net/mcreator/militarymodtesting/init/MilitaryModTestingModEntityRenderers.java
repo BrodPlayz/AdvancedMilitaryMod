@@ -16,5 +16,6 @@ public class MilitaryModTestingModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(MilitaryModTestingModEntities.TECH_9.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MilitaryModTestingModEntities.PISTOL.get(), ThrownItemRenderer::new);
 	}
 }

@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.militarymodtesting.entity.Tech9Entity;
+import net.mcreator.militarymodtesting.entity.PistolEntity;
 import net.mcreator.militarymodtesting.MilitaryModTestingMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -24,6 +25,9 @@ public class MilitaryModTestingModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, MilitaryModTestingMod.MODID);
 	public static final RegistryObject<EntityType<Tech9Entity>> TECH_9 = register("projectile_tech_9",
 			EntityType.Builder.<Tech9Entity>of(Tech9Entity::new, MobCategory.MISC).setCustomClientFactory(Tech9Entity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PistolEntity>> PISTOL = register("projectile_pistol",
+			EntityType.Builder.<PistolEntity>of(PistolEntity::new, MobCategory.MISC).setCustomClientFactory(PistolEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

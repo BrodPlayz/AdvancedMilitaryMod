@@ -3,9 +3,9 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "tech9mirrored",
+    "texture": "tech9mirr",
     "customModelName": "Normal",
-    "name": "Pistol",
+    "name": "Tech 9",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:MilitaryMod"
@@ -17,17 +17,17 @@
     "shootConstantly": true,
     "usageCount": 9999,
     "actionSound": {
-      "value": "item.crossbow.shoot"
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "animation": "bow",
     "enableMeleeDamage": false,
-    "damageVsEntity": 1.0,
-    "bulletPower": 2.0,
-    "bulletDamage": 5.0,
+    "damageVsEntity": 0.0,
+    "bulletPower": 5.0,
+    "bulletDamage": 3.0,
     "bulletKnockback": 1,
     "bulletParticles": true,
-    "bulletIgnitesFire": true,
+    "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:Bullet"
     },

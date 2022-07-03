@@ -23,6 +23,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet"
+    },
+    {
+      "name": "Pistol",
+      "type": "rangeditem",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol"
     }
   ],
   "variable_elements": [],
@@ -31,7 +39,8 @@
     "en_us": {
       "item.military_mod_testing.bullet": "Bullet",
       "itemGroup.tabmilitary_mod": "Military Mod",
-      "item.military_mod_testing.tech_9": "Pistol"
+      "item.military_mod_testing.tech_9": "Pistol",
+      "item.military_mod_testing.pistol": "Tech 9"
     }
   },
   "foldersRoot": {

@@ -16,10 +16,10 @@ import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.militarymodtesting.init.MilitaryModTestingModTabs;
 import net.mcreator.militarymodtesting.init.MilitaryModTestingModItems;
-import net.mcreator.militarymodtesting.entity.Tech9Entity;
+import net.mcreator.militarymodtesting.entity.PistolEntity;
 
-public class Tech9Item extends Item {
-	public Tech9Item() {
+public class PistolItem extends Item {
+	public PistolItem() {
 		super(new Item.Properties().tab(MilitaryModTestingModTabs.TAB_MILITARY_MOD).durability(9999));
 	}
 
@@ -58,7 +58,7 @@ public class Tech9Item extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					Tech9Entity entityarrow = Tech9Entity.shoot(world, entity, world.getRandom(), 2f, 5, 1);
+					PistolEntity entityarrow = PistolEntity.shoot(world, entity, world.getRandom(), 5f, 3, 1);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
